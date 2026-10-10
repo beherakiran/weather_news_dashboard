@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>☁️ Weather Dashboard</h1>
+
+      <p class="subtitle">Current Weather & Location Detection</p>
+
+      <!-- Search -->
+
+      <div class="search-box">
+        <input type="text" id="city" placeholder="Enter city name" />
+
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <!-- Loading -->
+
+      <p id="loading">Getting your location...</p>
+
+      <!-- Error -->
+
+      <p id="error"></p>
+
+      <!-- Weather -->
+
+      <div class="weather-card" id="weather-card">
+        <div class="weather-top">
+          <div>
+            <h2>📍 <span id="city_name">--</span></h2>
+
+            <div class="temperature" id="temp">--°</div>
+
+            <p class="condition" id="weather">--</p>
+          </div>
+
+          <div class="weather-icon" id="weather-icon">☁️</div>
+        </div>
+
+        <div class="weather-details">
+          <div class="detail-box">
+            <h3>Humidity</h3>
+
+            <p id="humidity">--%</p>
+          </div>
+
+          <div class="detail-box">
+            <h3>Wind Speed</h3>
+
+            <p id="wind">--</p>
+          </div>
+
+          <div class="detail-box">
+            <h3>Feels Like</h3>
+
+            <p id="feels_like">--°C</p>
+          </div>
+
+          <div class="detail-box">
+            <h3>Pressure</h3>
+
+            <p id="pressure">--</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="news-section">
+      <h2>📰 Latest News</h2>
+
+      <div id="news-container"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
